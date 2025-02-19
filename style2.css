@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+.nav {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally */
+    background-color: rgb(12, 0, 116); /* Background color for the nav */
+    padding: 10px 30px; /* Padding around the nav */
+    position: sticky; /* Keeps it sticky */
+    top: 10px; /* Sticks it to the top of the page */
+    left: 0; /* Align it to the left */
+    width: auto; /* Make sure it spans the full width */
+    margin: 0; /* Remove any default margin */
+    border-radius: 10px; /* Optional: Remove rounded corners */
+    color: white;
+    z-index: 3; /* Keeps it on top */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
+}
+.logo {
+    position: absolute; /* Position logo absolutely */
+    left: 7px; /* Space from the left */
+    width: 35px;
+    border-radius: 5px;
+}
+.welcome{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    position: relative;
+}
+.h1{
+    animation: fadeout;
+    animation-timeline: view();
+    animation-range: exit -50vh;
+}
+.img {
+    animation: fadeout2;
+    animation-timeline: view();
+    animation-range: exit -25vh;
+    border-radius: 10px;
+}
+@keyframes fadeout{
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes fadeout2{
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+h3{
+    margin: 0px;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px; /* Width of the hamburger menu */
+    height: 30px; /* Height of the hamburger menu */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    position: absolute;
+    right: 10px;
+    -webkit-tap-highlight-color: transparent !important;
+}
+.bar {
+    height: 4px; /* Height of each bar */
+    width: 100%; /* Full width */
+    background-color: white; /* Color of the bars */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+.menu {
+    position: fixed;
+    top: 60px;
+    right: -300px; /* Initially off-screen */
+    width: 250px;
+    height: 88%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    transition: right 0.3s ease;
+    z-index: 3;
+    border-radius: 10px;
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    -webkit-tap-highlight-color: transparent !important;
+    max-width: 200px;
+}
+.menu a:hover{
+    transform: scale(1.05);
+    background-color: #cccccc;
+}
+.menu-background {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+a{
+    color: #3dc8e0;
+}
+.div{
+    border: 1.5px solid rgb(216, 216, 216);
+    padding: 20px;
+    width: fit-content;
+    max-width: 500px;
+    margin: auto;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+
+}
+.div ul{
+    text-align: left;
+}
+.container{
+    display: flex;               /* Use flexbox for layout */
+    justify-content: center;     /* Center items horizontally */
+    align-items: center;         /* Center items vertically */
+    flex-wrap: wrap;
+}
+.double{
+    margin: 10px;
+}
+.only{
+    max-width: 90%;
+}
+.animate div{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
