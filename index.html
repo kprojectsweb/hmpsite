@@ -5,65 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMPS</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Tomorrow" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
     <script type="module" src="script.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
 </head>
 <body>
     <!-- navbar -->
     <div id="nav" class="nav">
-        <img src="logo.jpeg" alt="Logo" class="logo">
-        <h3>HMPS</h3>
-        <div id="hamburger" class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <img src="logo.jpg" alt="Logo" class="logo">
+        <h3>HMCS Toodlers Zone</h3>
+    </div>
+    <div class="slideshow-container">
+        <div class="slides-wrapper">
+            <div class="slide" id="slide1">
+                <b>Providing aplace for toodler's development</b>
+            </div>
+            <div class="slide" id="slide2">
+                <b>Where the can play! fun! & most focused, learn!</b>
+            </div>
+            <div class="slide" id="slide3"><b>Let then take their first step!</b></div>
+            <!-- Add more slides as needed -->
         </div>
     </div>
-
-    <!-- menu -->
-    <div class="menu" id="menu">
-        <a href="index.html">Home</a>
-        <a href="abtschl.html">About School</a>
-        <a href="sports.html">Sports</a>
-        <a href="music.html">Music</a>
-        <a href="contact.html">Contact</a>
-    </div>
-    <div class="menu-background" id="menu-background"></div>
-    <hr color="red" width="50%">
-    <div class="welcome">
-        <img class="img" src="logo.jpeg" alt="">
-        <h1 class="h1" id="welcome">Welcome To Holy Mother Charitable Society</h1>
-        <h3 class="h1">Please scroll down for dive into!</h3>
-    </div>
-    <div class="bg">
-        <div class="animate">
-            <div class="div only">
-                <h3>Introduction</h3>
-                <p><b>Holy Mother Educational & Charitable Society (HMECS)</b> is a registered, non-profit organization dedicated in the field of social work which supports the impoverished sections of the society for improving the quality of life. The Head office is situated at Bharatpur, Rajasthan. It successfully operates through its group of committed volunteers and staffs.</p>
-                <p><b>HMECS</b>, reaches out to the disadvantaged sections of the society, mostly women, children and youth in general through its well deigned programs. The most important thing about us, is that we endeavors to make a difference in the lives of the people. Spreading awareness for the developmental issues for the people, who need it most, is what makes <b>HMECS</b>, so effective.</p>
-                <p>As <b>HMECS</b>, believes that social problems can be tackled best through the concerted efforts on the part of the people themselves, it works in partnership with communities such as the Nomadic, Backward Tribe, Dalit, the Landless, Refugees and the Minorities.</p>
-                <p><b>Legal Status: HMECS</b> is registered under the societies’ registration Act, Sec 28 of 1958 in Bharatpur District of Rajasthan.</p>
-            </div>
-            <div class="container">
-                <div class="div double">
-                    <h3>Our Focus on Development Issues</h3>
-                    <ul>
-                        <li>Empowerment</li>
-                        <li>Educational</li>
-                        <li>Social</li>
-                        <li>Political (PRIs)</li>
-                        <li>Economic</li>
-                    </ul>
+    
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <!-- Add more dots as needed -->
+    </div>    
+    <br>
+    <h1 id="welcome">Welcome to,</h1>
+    <h1 id="welcome2">HMCS's Toodlers zone</h1>
+    <div class="container">
+        <div class="video-container double">
+            <video id="myVideo" preload="metadata">
+                <source src="intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="custom-controls">
+                <button class="play-button" id="playButton">Play</button>
+                <div class="timeline" id="timeline">
+                    <div class="progress" id="progress"></div>
                 </div>
-                <div class="div double">
-                    <h3>Vision</h3>
-                    <p>To identify and work with the impoverished, weaker and vulnerable sections specially women and children to establish a society where each and every person lives with dignity</p>
-                </div>
-                <div class="div double">
-                    <h3>Mission</h3>
-                    <p>To work with the deprived sections of the society especially women and children by enhancing their capacities through different avenues so that they become socially and economically empowered</p>
-                </div>
+                <div class="time-display" id="timeDisplay">0:00</div>
             </div>
         </div>
+        <p class="double" id="introp">Step into the vibrant world of <strong>Holy Mother Toodler's Zone</strong> through our engaging video! You'll witness the joy of collaborative learning, where toddlers thrive in a supportive and playful environment. Our specially trained teachers, passionate about early childhood development, guide children through diverse and interactive learning experiences, with a strong emphasis on play-based education. The video showcases our charming and stimulating classrooms, designed to spark curiosity and foster a love of learning. We aim to provide your child with the best possible start, ensuring rapid development and a solid foundation. This visual introduction offers a glimpse into our nurturing community, highlighting our commitment to exceptional care and various facilities provided by <strong>Holy Mother Toodler's Zone</strong> family.</p>
+    </div>
+    <hr width="90%" color="#ff0041">
+    <div id="menu">
+        <button class="navmenu" id="home"><b>Brief</b></button>
+        <button class="navmenu" id="gallery"><b>Gallery</b></button>
+        <button class="navmenu" id="contact"><b>Contact</b></button>
+    </div>
+    <div id="content">
+        <h3>Hello world</h3>
+        <hr width="70%">
+        <p>At <strong>Holy Mother Toodle's Zone</strong>, we've cultivated a unique and dynamic approach to early childhood education, one that transcends traditional methodologies. We believe in fostering a holistic development that empowers children to reach their fullest potential. Our curriculum is designed to ignite curiosity and inspire a lifelong love of learning, incorporating diverse programs that expose children to a multitude of fields and experiences. Our dedicated and exceptionally friendly teachers create a nurturing environment where every child feels valued and supported, guiding them through their developmental milestones with patience and care. We place a strong emphasis on social and emotional growth, equipping children with the confidence and resilience to excel in any setting. We nurture their ability to stand tall and handle the challenges of future life. By choosing <strong>Holy Mother Toodle's Zone</strong>, you're entrusting your child to a community committed to their well-being and success. We are part of the Holy Mother Charitable Society, a trust that has been established for the well being of children. We believe in building a foundation of trust with parents, ensuring that your child's early learning journey is both enriching and transformative.</p>
     </div>
 </body>
 </html>
