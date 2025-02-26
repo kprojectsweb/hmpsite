@@ -143,7 +143,7 @@ document.getElementById('contact').addEventListener('click', function(){
                 <p><i class="fa-solid fa-phone" style="font-size: 15px; color: #74C0FC;"></i> <a href="tel:7023008446">+91-7023008446</a></p>
             </div>
             <div class="contactdiv double">
-                <h3>Follow us on FcaeBook</h3>
+                <h3>Follow us on FaceBook</h3>
                 <p>Stay connected, get updates, and join the conversation. Like and follow our Facebook page for news, events, and more!</p>
                 <a href="https://www.facebook.com/people/Holy-Mothers-Toddlers-Zone/61558420486990/"><i class="fab fa-facebook" style="font-size: 40px;"></i></a>
                 <p>Click the icon to visit our official Facebook page.</p>
