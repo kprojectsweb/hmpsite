@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //btn logic
 document.getElementById('home').addEventListener('click', function(){
     document.getElementById('content').innerHTML = `
-        <h3>Hello world</h3>
+        <h3>Holy Mother Toodler's zone</h3>
         <hr width="70%">
         <p>At <strong>Holy Mother Toodle's Zone</strong>, we've cultivated a unique and dynamic approach to early childhood education, one that transcends traditional methodologies. We believe in fostering a holistic development that empowers children to reach their fullest potential. Our curriculum is designed to ignite curiosity and inspire a lifelong love of learning, incorporating diverse programs that expose children to a multitude of fields and experiences. Our dedicated and exceptionally friendly teachers create a nurturing environment where every child feels valued and supported, guiding them through their developmental milestones with patience and care. We place a strong emphasis on social and emotional growth, equipping children with the confidence and resilience to excel in any setting. We nurture their ability to stand tall and handle the challenges of future life. By choosing <strong>Holy Mother Toodle's Zone</strong>, you're entrusting your child to a community committed to their well-being and success. We are part of the Holy Mother Charitable Society, a trust that has been established for the well being of children. We believe in building a foundation of trust with parents, ensuring that your child's early learning journey is both enriching and transformative.</p>
         `
